@@ -1,0 +1,12 @@
+업로드
+
+git init
+git add.
+git commit -m "abc"
+git remote add origin 본인원격저장소
+git push -u origin main
+
+
+다운로드
+
+git clone 원격저장소
