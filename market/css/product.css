@@ -1,0 +1,27 @@
+/* 메뉴 스타일 */
+
+nav a{
+    text-decoration: none;
+    color: black;}
+
+/* 질문/답변 스타일 */
+/* h2{text-align: center;} */
+table{
+    border: 3px solid #ccc;
+    border-collapse: collapse;
+    width: 500px;
+    height: 80px;
+}
+th, td{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 로그인 스타일 */
+.tbl_login{
+    width: 300px;
+}
+.tbl_login td{
+    width: 150px;
+    height: 30px;
+}
