@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(21, 0, 41);
+}
+#container{
+    width: 600px;
+    height: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+div h1{
+    background: rgba(28, 22, 54, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+div h2{
+    text-align: center;
+    font-style: italic;
+}
+
+div ul{
+    list-style: none;
+
+}
+
+div ul li{
+    line-height: 2.5em;
+}
+
+div h3{
+    color: red;
+}
+
+#mic{
+float: right;
+}
