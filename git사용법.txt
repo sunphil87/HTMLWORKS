@@ -10,3 +10,6 @@ git push -u origin main
 다운로드
 
 git clone 원격저장소
+
+2번째부터 데이터 가져올 때에는
+git pull
