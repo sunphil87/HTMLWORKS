@@ -15,4 +15,4 @@ header #topMenu li a{color: white; text-decoration: none;}
 #contents section div{margin: 30px 10px;}
 #contents section p{line-height: 2em;}
 #contents #healing img, #activity img{float: left; margin-right: 20px; border-radius: 20px;}
-#contents #healing{height: 300px;}
+#contents #healing, #activity{height: 300px;}
