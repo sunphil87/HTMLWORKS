@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>type 속성</legend>
+            <p>아이디 : <input type="text" required autocomplete="on" autofocus></p>
+            <p>비밀번호 : <input type="password" placeholder="대문자+소문자+숫자+특수문자"></p>
+            <p>검색 : <input type="search"></p>
+            <p>이메일 : <input type="email" title="이메일 입력" value="@naver.com"></p>
+            <p>전화번호 : 
+                <select name="tel">
+                    <option disabled>지역번호</option>
+                    <option selected>02</option>
+                    <option>031</option>
+                    <option>044</option>
+                </select>
+                <input type="tel"></p>
+            <p>컬러선택 : <input type="color"></p>
+            <p>수량 : <input type="number" min="1" max="10" value="1"></p>
+            <p>만족도 : <input type="range" min="1" max="10" value="1"></p>
+            <p>
+                <label><input type="radio" name="receive" checked>예</label>
+                <label><input type="radio" name="receive">아니오</label>
+            </p>
+            <p>html<input type="checkbox" checked="checked">css<input type="checkbox"></p>
+            <p><input type="submit" value="전송"></p>
+            <p><input type="reset" value="취소"></p>
+            <p><input type="button" value="확인"></p>
+            <button type="button" onclick="alert('Thanks')">확인</button>
+            <p><input type="image" src="./images/bt.png" alt="검색"></p>
+            <p><input type="file" multiple></p>
+        </fieldset>
+</body>
+</html>
