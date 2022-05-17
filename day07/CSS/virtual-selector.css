@@ -1,0 +1,9 @@
+.container{width: 960px; margin: 0 auto;}
+nav{height: 80px}
+nav ul{list-style: none; border-bottom: 2px solid #ccc; padding: 10px 0; text-align: center;}
+nav ul li{display: inline-block; margin: 10px 20px;}
+nav a:link, a:visited{text-decoration: none; color: #000; padding: 10px;}
+/* focus는 tab 키 눌렀을 때 작용 */
+nav a:hover, a:focus{background: #000; color: #fff;}
+/* active는 마우스 클릭 했을 때 작용 */
+nav a:active{background: red;}

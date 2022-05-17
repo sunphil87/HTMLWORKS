@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 관련 스타일</title>
+    <style>
+        html{font-size: 16px;} /* 기본 16px*/
+        ul{font-size: 12px;}
+        li{font-size: 1.5em;} /* 부모 요소 글자크기(12px)의 1.5배 */
+        li:nth-child(4){font-size: 1.5rem;} /* 최상위 요소 글자 크기(16px)의 1.5배 */
+    </style>
+</head>
+<body>
+    <p>오늘의 진료는 본관에서 실시합니다.</p>
+    <ul>
+        <li>내과</li>
+        <li>이비인후과</li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+</body>
+</html>
