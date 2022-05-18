@@ -1,0 +1,12 @@
+div{
+    width: 640px;
+    height: 426px;
+    color: white;
+    position: relative;
+    background: no-repeat url(../images/bg.jpg);
+}
+h1{position: absolute;
+    top: 130px;
+    left: 350px;
+    font-size: 6em;
+}

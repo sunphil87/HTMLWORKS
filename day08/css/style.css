@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 30px auto;}
+#container > h1{text-align: center;}
+.Pro{list-style: none;}
+.Pro li{
+    display: inline-block; 
+    margin: 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.Pro img{float: left;}
+.Pro .caption{
+    width: 300px; height: 200px;
+    background: rgba(0,0,0,0);
+    padding: 20px;
+    position: absolute;
+    top: 200px;    
+    transition: 0.3s;
+    opacity: 0;
+}
+.Pro li:hover .caption{
+    transform: translateY(-200px);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    opacity: 0.8;
+}

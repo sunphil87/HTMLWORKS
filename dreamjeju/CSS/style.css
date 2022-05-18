@@ -46,3 +46,9 @@ footer #bottomMenu{list-style: none; text-align: center; margin: 10px 650px 10px
 #tbl_board{width: 800px; border-collapse: collapse; text-align: center;}
 #tbl_board th, #tbl_board td{border: 1px solid #ccc;}
 #tbl_board thead{background: #eee;}
+
+/* About Me 스타일 */
+h1{margin-bottom: 30px;}
+h2{margin-top: 30px; margin-bottom: 10px;}
+ul li{list-style: none;}
+img{margin: 10px; border-radius: 20px;}
