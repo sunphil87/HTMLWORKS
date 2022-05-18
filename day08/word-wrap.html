@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word wrap 속성</title>
+    <style>
+        ul{width: 200px; border: 1px solid #000;}
+        .wrapping{word-wrap: break-word; word-break: keep-all;}
+        /* ul:nth-child(2){word-wrap: break-word; word-break: keep-all;} */
+        /* ul:nth-of-type(2){word-wrap: break-word; word-break: keep-all;} */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : sunphil87 chanratsameekaewjaojom jungsoye@naver.com</p>            
+        </li>
+    </ul>
+    <ul class="wrapping">
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : sunphil87 chanratsameekaewjaojom jungsoye@naver.com</p>            
+        </li>
+    </ul>
+</body>
+</html>
