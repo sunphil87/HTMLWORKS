@@ -1,12 +1,12 @@
-*{margin: 0; padding: 0;}
+/* pc 기준 1180px 이상 */
+*{margin: 0; padding: 0; box-sizing: border-box;} */
 #container{width: 100%; margin: 0 auto;}
-main{width: 1000px; margin: 30px auto;}
 
 /* header 영역 */
 header{height: 80px; background: rgb(0,60,0);}
-#logo{width: 300px; float: left; padding: 15px 30px;}
+#logo{width: 300px; height: 80px; float: left; padding: 15px 30px;}
 #logo a{color: yellow; text-decoration: none;}
-nav {width: 800px; float: right;}
+nav {width: 550px; float: right;}
 #topMenu{list-style: none; text-align: right; margin-right: 50px; padding: 15px 20px;} 
 #topMenu li{display: inline-block; margin: 10px 20px;}
 #topMenu li a{color: white; text-decoration: none;}
@@ -19,7 +19,7 @@ nav {width: 800px; float: right;}
 #activity, #contents #sightseeing{margin-top: 30px;}
 #healing, #activity{height: 300px;}
 footer{width: 100%; margin: 30px auto; border-top: 3px solid #999;}
-footer #bottomMenu{list-style: none; text-align: center; margin: 10px 650px 10px 10px;}
+footer #bottomMenu{list-style: none; text-align: center; margin: 10px auto;}
 #bottomMenu li{display: inline-block; margin: 10px 0;
                     border-right: 1px solid #333; padding: 0 10px;}
 #bottomMenu li a{text-decoration: none; color: #333;}
@@ -28,27 +28,66 @@ footer #bottomMenu{list-style: none; text-align: center; margin: 10px 650px 10px
 #sightseeing ul a{text-decoration: none; color: #000;}
 #sightseeing ul li a:hover{text-decoration: underline;}
 
-/* product 스타일 */
-/* #product{width: 1000px; margin: 30px auto;} */
+/* product pc 스타일 */
+#product{width: 100%; margin: 15px auto;}
 #product p, li{line-height: 2;}
-#procuct h2{margin: 10px;}
+#description h2, #receipe h2, #package h2{margin: 0px;}
 #description{width: 800px; margin: 0 auto; border: 1px solid #999; padding: 20px 60px; margin-bottom: 20px; border-top-left-radius: 30px; border-top-right-radius: 30px;}
 #description img{border-radius: 15px; margin: 10px;}
 #receipe{width: 800px; margin: 0 auto; border: 1px solid #999; padding: 20px 60px; margin-bottom: 20px;}
 #receipe ol{padding-left: 20px;}
 #package{width: 800px; margin: 0 auto; border: 1px solid #999; padding: 20px 60px; margin-bottom: 20px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
-#product table, th, td{border: 1px solid #ccc; border-collapse: collapse; padding: 10px 20px;}
+#product table, #product th, #product td{border: 1px solid #ccc; border-collapse: collapse; padding: 5%;}
+#tbl_package{width: 678px; text-align: center;}
+#qna, #tbl_board{width: 90%; text-align: center; margin: 15px auto;}
 
 
 /* board 스타일 */
 #qna{height: 730px;}
-#board h2{margin: 30px 10px;}
+#board h2{margin: 15px 10px;}
 #tbl_board{width: 800px; border-collapse: collapse; text-align: center;}
 #tbl_board th, #tbl_board td{border: 1px solid #ccc;}
 #tbl_board thead{background: #eee;}
 
 /* About Me 스타일 */
+#profile{text-align: center;}
 h1{margin-bottom: 30px;}
 h2{margin-top: 30px; margin-bottom: 10px;}
 ul li{list-style: none;}
 img{margin: 10px; border-radius: 20px;}
+#profile #intro ul li{text-indent: 40px;}
+
+/* 태블릿 기준 */
+@media screen  and (max-width: 1180px) {
+    header{height: 100%; display: flex; flex-direction: row;}
+    #logo{width: 100%; height: 80px; float: left; padding: 15px 0 15px 30px;}
+    #logo{width: 300px;}
+    nav{width: 100%; height: 80px; margin: 0;}
+    #topMenu{margin-right: 0;}
+    #topMenu li{margin: 5px; font-size: 1em;}
+    .detail{display: flex; flex-direction: column;}
+    img{display: none;}
+    footer{width: 100%; margin: 30px auto; border-top: 3px solid #999;}
+    footer #bottomMenu{margin: 0 auto;}
+    #bottomMenu li{display: inline-block;}
+    #description, #receipe, #package{width: 68%;}
+    #tbl_package{width: 100%;}
+    #tbl_board{width: 90%;}
+    #intro img, #portfolio img{display: block; width: 60%; margin: 10px auto; padding: 5%;}
+}
+
+/* 모바일 기준 */
+@media screen  and (max-width: 600px) {
+    header{height: 160px; display: flex; flex-direction: column;}
+    #topMenu{margin: 0; padding: 0px 5;}
+    #topMenu li{font-size: 0.8em;}
+    #logo{width: 300px;}
+    .detail{display: flex; flex-direction: column;}
+    img{display: none;}
+    #activity, #sightseeing{height:100%; margin: 50px auto;}
+    #package{font-size: 0.7em; padding: 5%;}
+    #tbl_package{width: 100%;}
+    footer{width: 100%; margin: 30px auto; border-top: 3px solid #999;}
+    footer #bottomMenu{margin: 0 auto;}
+    #bottomMenu li{display: block;}
+    }
