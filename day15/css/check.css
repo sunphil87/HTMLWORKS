@@ -1,0 +1,16 @@
+input[type="checkbox"].css-checkbox{
+    border: none;
+    background: none;
+    position: absolute; left: -999px;
+}
+.css-checkbox + label{
+    display: inline-block;
+    padding: 0 0 0 30px;
+    height: 20px; line-height: 20px;
+    background: url(../img/bg_checkbox.png) no-repeat 0 0;
+    background-size: 20px 40px;
+    vertical-align: middle;
+}
+.css-checkbox + label{
+    background-position: 0 -20px;
+}
